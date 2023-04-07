@@ -35,6 +35,7 @@ public class PlayerStatus : MonoBehaviour
         }
     }
 
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "KillZone")
