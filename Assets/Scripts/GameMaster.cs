@@ -8,6 +8,7 @@ public class GameMaster : MonoBehaviour
     public TextMeshProUGUI points;
     public TextMeshProUGUI time;
     public GameObject player;
+    
     private int score;
     private float timeValue;
     private float totalTime;
