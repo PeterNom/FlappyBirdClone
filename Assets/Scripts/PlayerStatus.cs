@@ -21,10 +21,11 @@ public class PlayerStatus : MonoBehaviour
     {
         playerRb = GetComponent<Rigidbody2D>();
         timeLeft = 0;
-        gameIsPaused = false;
+        gameIsPaused = true;
         alive = true;
         Time.timeScale = 1.0f;
         gameMaster = GameObject.Find("GameController").GetComponent<GameMaster>();
+        OnChangeMenu(gameIsPaused);
     }
 
     // Update is called once per frame

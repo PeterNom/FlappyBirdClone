@@ -25,8 +25,8 @@ public class Obsticle_Spawner : MonoBehaviour
             time = Mathf.Abs(Random.value) % 5 + 3;
             Debug.Log(time);
 
-            Down = Instantiate(pipeDown, new Vector3( 12.0f, -2.24f, 0), pipeDown.transform.rotation);
-            Up   = Instantiate(pipeUp, new Vector3( 12.0f, 3.8f, 0), pipeUp.transform.rotation);
+            Down = Instantiate(pipeDown, new Vector3( 22.0f, -2.24f, 0), pipeDown.transform.rotation);
+            Up   = Instantiate(pipeUp, new Vector3( 22.0f, 3.8f, 0), pipeUp.transform.rotation);
             PointMarker = Instantiate(points, Down.transform.position, pipeUp.transform.rotation);
 
             Down.GetComponent<MoveObsticles>().enabled = true;
